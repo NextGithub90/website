@@ -1,0 +1,552 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap");
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  max-width: 100%;
+  overflow-x: hidden;
+
+  font-family: "Nunito Sans", sans-serif;
+}
+nav {
+  background-color: #222831;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.wrapper {
+  display: flex;
+  width: 1024px;
+  margin: auto;
+  padding: 20px 0px 20px 0px;
+  align-items: center;
+}
+
+/* Tambahkan gaya animasi underline ke tautan di nav */
+.wrapper .menu ul li a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+.wrapper .menu ul li a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffce10; /* Warna underline */
+  transition: width 0.3s ease; /* Animasi transisi lebar */
+}
+
+.wrapper .menu ul li a:hover::before {
+  width: 100%;
+}
+/* batas trassition hover */
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+nav .wrapper {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+  font-size: 1.2rem;
+}
+.menu {
+  width: 50%;
+}
+.wrapper .menu ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+.wrapper .menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* header */
+header {
+  background: url(images/bg-header.jpeg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.header-opacity {
+  background-color: #222831;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.header-jumbrotton {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column; /* Ubah menjadi column untuk menumpuk elemen secara vertikal */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: -40px;
+  letter-spacing: 5px;
+}
+
+.header-jumbrotton h4 {
+  color: #ffce10;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.header-jumbrotton h5 {
+  color: #fff; /* Tetapkan warna untuk h5 */
+  font-size: 2.8rem; /* Sesuaikan ukuran font sesuai kebutuhan */
+  margin: 10px 0 0; /* Tambahkan margin di bagian atas untuk pemisahan dari h4 */
+  padding: 0;
+  text-transform: uppercase;
+}
+.header-jumbrotton p {
+  color: whitesmoke;
+  margin-top: 10px;
+}
+.header-jumbrotton a {
+  text-decoration: none;
+  color: #333;
+  text-shadow: none;
+  padding: 5px 10px 5px 10px;
+  /* font-size: 1rem; */
+  border-radius: 10px;
+  background-color: #ffce10;
+}
+.button-xl {
+  font-size: 1.4rem;
+  /* padding: 20px; */
+}
+
+/* section / statisticts */
+section {
+  background-color: #393e46;
+  color: aliceblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* border: 1px solid; */
+}
+section .wrapper {
+  /* border: 1px solid; */
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+}
+section .wrapper div {
+  /* border: 1px solid; */
+  text-align: center;
+}
+section .wrapper div p {
+  font-size: 3.2rem;
+  margin: 0;
+  padding: 0;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+section .wrapper small {
+  /* margin-left: 10px; */
+  font-size: 1.7rem;
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* PREMIUM COURSE */
+#premium-course {
+  background-color: #222831;
+  color: aliceblue;
+  text-align: center; /* Tambahkan gaya untuk membuat teks berada di tengah */
+  padding: 10px 0; /* Sesuaikan padding sesuai keinginan */
+}
+
+#premium-course .wrapper {
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column; /* Ubah menjadi column untuk menumpuk elemen secara vertikal */
+  align-items: center; /* Tengahkan elemen */
+}
+
+#premium-course p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2.8rem;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid; */
+}
+
+#premium-course span {
+  color: #ffce10;
+}
+
+#premium-course small {
+  /* margin-left: 10px; */
+  font-size: 1.4rem;
+  padding: 0;
+
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.grid {
+  /* width: 100%; */
+  display: grid;
+  /* border: 1px solid #f1eaea; */
+  width: 100%;
+  grid-template-columns: 30% 30% 30%;
+  /* border: 0; */
+  margin: 0;
+  padding: 50px;
+  grid-gap: 50px;
+  margin-top: 50px;
+}
+.grid .item {
+  border-radius: 5px;
+
+  border: 1px solid #393e46;
+  background-color: #393e46;
+  position: relative;
+}
+.item img {
+  /* padding: 10px; */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.item-detail h5 {
+  padding-left: 15px;
+  text-align: start;
+  font-size: 1.5rem;
+  font-family: monospace;
+  letter-spacing: 2px;
+  width: 70%;
+}
+.items {
+  margin: 0;
+  padding: 0;
+  /* padding-bottom:0px; */
+  width: 100%;
+  font-style: italic;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-around;
+  font-size: 1rem;
+  /* margin-top: 100px; */
+  /* border: 1px solid; */
+}
+.items h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  color: #ccc;
+  font-style: italic;
+  text-align: center;
+  /* margin: 0px 20px 10px 0px; */
+  margin-left: 10px;
+  margin-bottom: 20px;
+  /* margin-right: 100px; */
+}
+.items a {
+  color: #393e46;
+  text-decoration: none;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ffce10;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+
+/* tentang saya */
+#tentang_saya {
+  background-color: #eeeeee;
+  /* color: black; */
+  /* color: aliceblue; */
+  color: #333333;
+
+  text-align: center; /* Tambahkan gaya untuk membuat teks berada di tengah */
+  padding: 10px 0; /* Sesuaikan padding sesuai keinginan */
+}
+
+#tentang_saya .wrapper {
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column; /* Ubah menjadi column untuk menumpuk elemen secara vertikal */
+  align-items: center; /* Tengahkan elemen */
+
+  width: 95%;
+}
+
+#tentang_saya p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2.8rem;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 3px;
+  /* border: 1px solid; */
+}
+
+#tentang_saya small {
+  /* margin-left: 10px; */
+  font-size: 0.9rem;
+  color: rgba(128, 128, 128, 0.945);
+  padding: 0;
+
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#tentang_saya .wrapper small {
+  margin-bottom: 50px;
+}
+#tentang_saya .wrapper div {
+  /* border: 1px solid; */
+  width: 60%;
+  display: flex;
+  gap: 25px;
+  /* align-items: center; */
+  padding-top: 15px;
+  /* margin: auto; */
+}
+#tentang_saya .wrapper div .foto {
+  /* border: 1px solid; */
+  width: 30%;
+}
+#tentang_saya .wrapper div .foto img {
+  /* border: 1px solid; */
+  max-width: 100%;
+}
+#tentang_saya .wrapper div .teks {
+  /* border: 1px solid; */
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin: 0;
+  padding: 20px;
+  border-radius: 8px;
+  line-height: 20px;
+  text-align: justify;
+}
+#tentang_saya .wrapper div .teks p {
+  font-family: "Nunito Sans";
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  font-size: 1.2rem;
+}
+.social a {
+  color: #00adb5;
+  /* border: 1px solid; */
+}
+
+/* fress course */
+#free_course {
+  background-color: #393e46;
+  color: aliceblue;
+  text-align: center; /* Tambahkan gaya untuk membuat teks berada di tengah */
+  padding: 10px 0; /* Sesuaikan padding sesuai keinginan */
+}
+
+#free_course .wrapper {
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column; /* Ubah menjadi column untuk menumpuk elemen secara vertikal */
+  align-items: center; /* Tengahkan elemen */
+}
+
+#free_course p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2.8rem;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid; */
+}
+
+#free_course span {
+  color: #ffce10;
+}
+
+#free_course small {
+  /* margin-left: 10px; */
+  font-size: 1.4rem;
+  padding: 0;
+
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+/* #free_course .wrapper .grid {
+  width: 100%;
+  height: 100%;
+  background-color: #ffce10;
+} */
+#free_course .wrapper .grid {
+  width: 100%;
+}
+#free_course .wrapper .item {
+  /* background-color: aqua; */
+  /* width: 70%; */
+  background-color: #222831;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* height: auto; */
+}
+#free_course .wrapper .item .item-detail {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* height: auto; */
+  /* height: 250px; */
+}
+#free_course .wrapper .item .item-detail img {
+  margin: 0;
+  padding: 0;
+  width: 89%;
+  margin-top: -10px;
+  background-position: center;
+  /* padding-top: 20px; */
+  padding: 20px;
+  background-attachment: fixed;
+  background-size: cover;
+  /* height: 100%; */
+  position: relative;
+}
+/* footer */
+footer section {
+  color: whitesmoke;
+  background-color: #222831;
+  /* border: 1px solid; */
+}
+
+/* responsif 768px / hendphone */
+/* navbar responsif */
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    width: 1024px;
+  }
+  nav .wrapper {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    font-size: 1rem;
+    width: 94%;
+  }
+  .wrapper .menu {
+    /* border: 1px solid black; */
+    width: 65%;
+  }
+  .header-jumbrotton h4 {
+    color: #ffce10;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  .header-jumbrotton h5 {
+    color: #fff; /* Tetapkan warna untuk h5 */
+    font-size: 2.7rem; /* Sesuaikan ukuran font sesuai kebutuhan */
+    margin: 10px 0 0; /* Tambahkan margin di bagian atas untuk pemisahan dari h4 */
+    padding: 0;
+    text-transform: uppercase;
+  }
+  .header-jumbrotton p {
+    color: whitesmoke;
+    font-size: 1.6rem; /* Sesuaikan ukuran font sesuai kebutuhan */
+    margin-top: 10px;
+    text-shadow: -5px -4px 20px;
+  }
+  .header-jumbrotton a {
+    border-radius: 20px;
+    /* content: "sdhsjdh"; */
+  }
+  .button-xl {
+    font-size: 1.8rem;
+    /* padding: 20px; */
+  }
+
+  /* statisticts */
+  section .wrapper {
+    /* border: 1px solid; */
+    display: flex;
+    width: 91%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  section .wrapper small {
+    /* margin-left: 10px; */
+    font-size: 1.5rem;
+    /* font-family: Georgia, "Times New Roman", Times, serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  /* premium course */
+  .grid {
+    /* width: 100%; */
+    display: grid;
+    /* border: 1px solid #f1eaea; */
+    width: 100%;
+    grid-template-columns: 100%;
+    /* border: 0; */
+    margin: 0;
+    padding: 50px;
+    grid-gap: 50px;
+    margin-top: 17px;
+    margin-left: -45px;
+  }
+
+  /* tentang saya */
+  #tentang_saya .wrapper {
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column; /* Ubah menjadi column untuk menumpuk elemen secara vertikal */
+    align-items: center; /* Tengahkan elemen */
+
+    width: 100%;
+  }
+  #tentang_saya .wrapper div {
+    /* border: 1px solid; */
+    width: 92%;
+    margin-left: 15px;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    padding-top: 15px;
+    /* margin: auto; */
+  }
+  #tentang_saya .wrapper div .foto img {
+    /* border: 1px solid; */
+    max-width: 182%;
+    margin-left: 115px;
+  }
+  #tentang_saya .wrapper div .teks {
+    /* border: 1px solid; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 0;
+    padding: 20px;
+    border-radius: 8px;
+    line-height: 20px;
+    text-align: justify;
+  }
+}
