@@ -446,7 +446,7 @@ footer section {
     display: flex;
     justify-content: space-between;
     /* border: 1px solid black; */
-    font-size: 1rem;
+    font-size: 0.8rem;
     width: 94%;
   }
   .wrapper .menu {
@@ -460,24 +460,28 @@ footer section {
     padding: 0;
   }
   .header-jumbrotton h5 {
+    font-family: monospace;
     color: #fff; /* Tetapkan warna untuk h5 */
-    font-size: 2.7rem; /* Sesuaikan ukuran font sesuai kebutuhan */
+    font-size: 1.4rem; /* Sesuaikan ukuran font sesuai kebutuhan */
+    /* border: 1px solid; */
     margin: 10px 0 0; /* Tambahkan margin di bagian atas untuk pemisahan dari h4 */
     padding: 0;
     text-transform: uppercase;
   }
   .header-jumbrotton p {
     color: whitesmoke;
-    font-size: 1.6rem; /* Sesuaikan ukuran font sesuai kebutuhan */
+    font-size: 0.7rem; /* Sesuaikan ukuran font sesuai kebutuhan */
     margin-top: 10px;
     text-shadow: -5px -4px 20px;
   }
   .header-jumbrotton a {
     border-radius: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
     /* content: "sdhsjdh"; */
   }
   .button-xl {
-    font-size: 1.8rem;
+    font-size: 1rem;
     /* padding: 20px; */
   }
 
@@ -485,14 +489,22 @@ footer section {
   section .wrapper {
     /* border: 1px solid; */
     display: flex;
-    width: 91%;
+    width: 100%;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    align-content: center;
+  }
+  section .wrapper div p {
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   }
   section .wrapper small {
     /* margin-left: 10px; */
-    font-size: 1.5rem;
+    font-size: 0.9rem;
     /* font-family: Georgia, "Times New Roman", Times, serif; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
@@ -502,51 +514,125 @@ footer section {
     /* width: 100%; */
     display: grid;
     /* border: 1px solid #f1eaea; */
-    width: 100%;
+    width: 90%;
     grid-template-columns: 100%;
     /* border: 0; */
     margin: 0;
     padding: 50px;
     grid-gap: 50px;
-    margin-top: 17px;
-    margin-left: -45px;
+    margin-top: -20px;
+    /* margin-left: -45px; */
   }
-
-  /* tentang saya */
-  #tentang_saya .wrapper {
+  #premium-course .wrapper {
     /* border: 1px solid; */
     display: flex;
     flex-direction: column; /* Ubah menjadi column untuk menumpuk elemen secara vertikal */
     align-items: center; /* Tengahkan elemen */
+    /* width: 100%; */
+    text-align: center;
+    /* border: 1px solid; */
+  }
+  #premium-course p {
+    font-family: monospace;
 
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid; */
+  }
+
+  #premium-course small {
+    /* margin-left: 10px; */
+    font-size: 0.7rem;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    /* font-family: Georgia, "Times New Roman", Times, serif; */
+  }
+  #premium-course .wrapper .grid .item .item-detail h5 {
+    font-size: 1rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  /* 
+  Tentang saya
+  */
+  #tentang_saya .wrapper {
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column; /* Ubah menjadi column untuk menumpuk elemen secara vertikal */
+    align-content: center; /* Tengahkan elemen */
+    /* border: 1px solid; */
     width: 100%;
   }
   #tentang_saya .wrapper div {
     /* border: 1px solid; */
-    width: 92%;
-    margin-left: 15px;
+    width: 90%;
+
+    /* margin-left: 15px; */
     display: flex;
     gap: 25px;
     flex-wrap: wrap;
     /* align-items: center; */
-    padding-top: 15px;
+    /* padding-top: 1px; */
+    margin-top: -30px;
     /* margin: auto; */
+    /* border: 1px solid; */
+    align-content: center;
+  }
+  #tentang_saya .wrapper div .foto {
+    /* border: 1px solid; */
+    width: 100%;
+    align-content: center;
+    align-items: center;
+    text-align: center;
   }
   #tentang_saya .wrapper div .foto img {
     /* border: 1px solid; */
-    max-width: 182%;
-    margin-left: 115px;
+    justify-content: center;
+    background-position: center;
+    margin-left: 54px;
+    max-width: 60%;
+    align-content: center;
+
+    /* width: 100%; */
+    align-items: center;
+    /* border: 1px solid; */
+    /* margin-left: 50px; */
   }
   #tentang_saya .wrapper div .teks {
     /* border: 1px solid; */
     width: 100%;
+    font-size: 1rem;
     display: flex;
     flex-direction: column;
     background-color: #fff;
     margin: 0;
     padding: 20px;
     border-radius: 8px;
-    line-height: 20px;
+    line-height: 25px;
+    /* text-align: ; */
+  }
+  #tentang_saya .wrapper div .teks p {
+    font-size: 1rem;
     text-align: justify;
+  }
+  #free_course p {
+    font-family: monospace;
+
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid; */
+  }
+  #free_course small {
+    /* margin-left: 10px; */
+    font-size: 0.7rem;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    /* font-family: Georgia, "Times New Roman", Times, serif; */
+  }
+  #free_course .wrapper .grid {
+    width: 90%;
   }
 }
