@@ -4,16 +4,18 @@ body {
   padding: 0;
   margin: 0;
   font-size: 16px;
-  max-width: 100%;
+  width: 100%;
   overflow-x: hidden;
-
+  scroll-behavior: smooth;
   font-family: "Nunito Sans", sans-serif;
 }
 nav {
   background-color: #222831;
   color: white;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
+
   z-index: 1;
 }
 
@@ -435,6 +437,22 @@ footer section {
   /* border: 1px solid; */
 }
 
+/* 
+Button hamburger menu
+*/
+button.hamburger-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+button.hamburger-menu i {
+  color: #fff;
+  font-size: 1rem;
+}
+button.hamburger-menu i.icon-close {
+  display: none;
+}
 /* responsif 768px / hendphone */
 /* navbar responsif */
 @media only screen and (max-width: 768px) {
@@ -634,5 +652,29 @@ footer section {
   }
   #free_course .wrapper .grid {
     width: 90%;
+  }
+  button.hamburger-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline;
+  }
+  .menu {
+    display: none;
+  }
+  .tampil {
+    display: inline;
+  }
+  .tampil ul li {
+    padding: 10px 20px 10px 20px;
+  }
+  .tampil ul {
+    flex-direction: column;
+    position: fixed;
+    top: 85px;
+    left: 0;
+    background-color: #222831b2;
+
+    width: 100%;
   }
 }
